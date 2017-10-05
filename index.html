@@ -3,6 +3,10 @@
 <head>
 	<title>Employee Tracker</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="container">
@@ -42,15 +46,15 @@
 				</div>
 				<div class="form-group">
 				  <label for="role">Role</label>
-				  <input type="password" class="form-control" id="role">
+				  <input type="text" class="form-control" id="role">
 				</div> 
 				 <div class="form-group">
 				  <label for="startDate">Start Date (DD/MM/YY - ex: 01/01/89)</label>
-				  <input type="text" class="form-control" id="startDate">
+				  <input type="date" class="form-control" id="startDate">
 				</div>
 				<div class="form-group">
 				  <label for="monthlyRate">Monthly rate</label>
-				  <input type="password" class="form-control" id="monthlyRate">
+				  <input type="text" class="form-control" id="monthlyRate">
 				</div> 
 				<div class="form-group">
 					<input type="submit" class="" id="submitButton" value="Submit">
@@ -58,5 +62,7 @@
 		  	</div>
 		</div>
 	</div>
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
