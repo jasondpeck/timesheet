@@ -1,48 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
 	<div class="container">
-  <div class="jumbotron">
-    <h1>Employee Time Card</h1> 
-  </div> 
-</div>    
-<div id="currentEmployee" class="panel panel-default">
-  <div class="panel-body">Current Employees</div>
-
-  	<div id="tableDiv" class="table-responsive">
-		<table id="currentEmployeeTable" class="table">
-			<thead id="tableHead">
-				<th>Employee Name</th>
-				<th>Role</th>
-				<th>Start Date</th>
-				<th>Months Worked</th>
-				<th>Monthly Rate ($)</th>
-				<th>Total Billed</th>
-			</thead>
-			<tbody id="tableBody">
+	  	<div class="jumbotron row">
+	    	<h1 class="text-center">Employee Time Card</h1> 
+	  	</div>     
+		<div class="panel panel-default panel-primary row">
+		  	<div class="panel-heading">
+		    	<h3 class="panel-title">Current Employees</h3>
+		  	</div>
+		  	<div class="panel-body">
+		    	<div id="tableDiv" class="table-responsive">
+					<table id="currentEmployeeTable" class="table">
+						<thead id="tableHead">
+							<th>Employee Name</th>
+							<th>Role</th>
+							<th>Start Date</th>
+							<th>Months Worked</th>
+							<th>Monthly Rate ($)</th>
+							<th>Total Billed</th>
+						</thead>
+						<tbody id="tableBody">
 				
-			</tbody>
-		</table>
+						</tbody>
+					</table>
+				</div>
+		  	</div>
+		</div>
+	  	<div class="panel panel-default panel-primary row">
+		  	<div class="panel-heading">
+		    	<h3 class="panel-title">Add Employee</h3>
+		  	</div>
+		  	<div class="panel-body">
+		   		<div class="form-group">
+  					<label for="employeeName">Employee Name</label>
+  					<input type="text" class="form-control" id="employeeName">
+				</div>
+				<div class="form-group">
+				  <label for="role">Role</label>
+				  <input type="password" class="form-control" id="role">
+				</div> 
+				 <div class="form-group">
+				  <label for="startDate">Start Date (DD/MM/YY - ex: 01/01/89)</label>
+				  <input type="text" class="form-control" id="startDate">
+				</div>
+				<div class="form-group">
+				  <label for="monthlyRate">Monthly rate</label>
+				  <input type="password" class="form-control" id="monthlyRate">
+				</div> 
+				<div class="form-group">
+					<input type="submit" class="" id="submitButton" value="Submit">
+				</div>
+		  	</div>
+		</div>
 	</div>
-	<br>
-	<br>
-  <div id="addEmployee" class="panel panel-default">
-  <div class="panel-body">Add Employee</div>
-<div class="form-group">
-  <label for="usr">Employee Name</label><br>
-  <input type="text" class="form-control" id="usr">
-</div>
-<div class="form-group">
-  <label for="pwd">Role</label><br>
-  <input type="password" class="form-control" id="pwd">
-</div> 
- <div class="form-group">
-  <label for="usr">Start Date (DD/MM/YY - ex: 01/01/89)</label><br>
-  <input type="text" class="form-control" id="usr">
-</div>
-<div class="form-group">
-  <label for="pwd">Monthly rate</label><br>
-  <input type="password" class="form-control" id="pwd">
-</div> 
-<div class="form-group">
-  
-  <input type="submit" class="" id="pwd" value="Submit">
-</div> 
-
+</body>
+</html>
